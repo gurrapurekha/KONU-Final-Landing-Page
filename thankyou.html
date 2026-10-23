@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MZKBF4XM');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You — KONU MySecure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: { brand: '#E2004B', 'brand-dark': '#BF003F' }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* ── ANIMATED BACKGROUND ─────────────────────────── */
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    .ty-bg {
+      background-color: #0a0a14;
+      background-image:
+        radial-gradient(ellipse 80% 60% at 10% 0%,   rgba(226,0,75,0.18) 0%, transparent 65%),
+        radial-gradient(ellipse 60% 50% at 90% 100%,  rgba(226,0,75,0.12) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 50% 50%,   rgba(255,120,60,0.06) 0%, transparent 70%);
+      min-height: 100vh;
+    }
+
+    /* floating orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(70px);
+      pointer-events: none;
+    }
+    .orb-1 {
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(226,0,75,0.22) 0%, transparent 70%);
+      top: -100px; left: -100px;
+      animation: orbFloat1 8s ease-in-out infinite;
+    }
+    .orb-2 {
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(255,80,40,0.14) 0%, transparent 70%);
+      bottom: -80px; right: -80px;
+      animation: orbFloat2 10s ease-in-out infinite;
+    }
+    .orb-3 {
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(226,0,75,0.10) 0%, transparent 70%);
+      top: 50%; left: 60%;
+      animation: orbFloat3 7s ease-in-out infinite;
+    }
+    @keyframes orbFloat1 {
+      0%,100% { transform: translate(0,0) scale(1); }
+      50%      { transform: translate(40px,30px) scale(1.08); }
+    }
+    @keyframes orbFloat2 {
+      0%,100% { transform: translate(0,0) scale(1); }
+      50%      { transform: translate(-30px,-40px) scale(1.05); }
+    }
+    @keyframes orbFloat3 {
+      0%,100% { transform: translate(0,0); }
+      50%      { transform: translate(-20px,20px); }
+    }
+
+    /* ── CHECKMARK ANIMATION ─────────────────────────── */
+    .check-circle {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FF0055, #E2004B);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 0 0 rgba(226,0,75,0.5);
+      animation: checkPop 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.3s both,
+                 checkPulse 2.5s ease-in-out 1s infinite;
+      margin: 0 auto 28px;
+    }
+    @keyframes checkPop {
+      0%   { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes checkPulse {
+      0%,100% { box-shadow: 0 0 0 0   rgba(226,0,75,0.45); }
+      50%      { box-shadow: 0 0 0 18px rgba(226,0,75,0);   }
+    }
+    .check-icon {
+      animation: checkDraw 0.5s ease 0.8s both;
+    }
+    @keyframes checkDraw {
+      0%   { opacity: 0; transform: scale(0.5) rotate(-15deg); }
+      100% { opacity: 1; transform: scale(1) rotate(0deg); }
+    }
+
+    /* ── CARD FADE-UP ────────────────────────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      animation: fadeUp 0.7s ease forwards;
+    }
+    .fade-up:nth-child(1) { animation-delay: 0.1s; }
+    .fade-up:nth-child(2) { animation-delay: 0.25s; }
+    .fade-up:nth-child(3) { animation-delay: 0.4s; }
+    .fade-up:nth-child(4) { animation-delay: 0.55s; }
+    .fade-up:nth-child(5) { animation-delay: 0.7s; }
+    .fade-up:nth-child(6) { animation-delay: 0.85s; }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── STAT CARDS ──────────────────────────────────── */
+    .stat-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      backdrop-filter: blur(10px);
+      padding: 18px 16px;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .stat-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(226,0,75,0.35);
+    }
+
+    /* ── WHAT HAPPENS NEXT STEPS ─────────────────────── */
+    .step-line {
+      position: absolute;
+      left: 19px; top: 44px;
+      width: 2px;
+      background: linear-gradient(to bottom, rgba(226,0,75,0.5), transparent);
+      height: calc(100% + 16px);
+    }
+
+    /* ── COUNTDOWN ───────────────────────────────────── */
+    #countdown-bar {
+      height: 3px;
+      background: linear-gradient(90deg, #FF0055, #E2004B);
+      border-radius: 2px;
+      transition: width 1s linear;
+    }
+
+    /* ── CONFETTI ─────────────────────────────────────── */
+    .confetti-piece {
+      position: fixed;
+      width: 8px; height: 8px;
+      border-radius: 2px;
+      pointer-events: none;
+      animation: confettiFall linear forwards;
+    }
+    @keyframes confettiFall {
+      0%   { transform: translateY(-20px) rotate(0deg);   opacity: 1; }
+      100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+  </style>
+</head>
+
+<body class="ty-bg overflow-x-hidden">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZKBF4XM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- FLOATING ORBS -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- NAVBAR (minimal) -->
+  <nav class="relative z-10 flex items-center justify-between max-w-6xl mx-auto px-6 py-5">
+    <!-- Inline SVG wordmark — no external image, no white flash -->
+    <svg width="90" height="28" viewBox="0 0 90 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="KONU">
+      <text x="0" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="22"
+            font-weight="800" letter-spacing="-0.5" fill="white" opacity="0.92">KONU</text>
+    </svg>
+    <a href="index.html"
+       class="text-xs font-semibold text-white/60 hover:text-white transition-colors tracking-wide">
+      ← Back to Home
+    </a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="relative z-10 flex flex-col items-center justify-center px-4 py-10 sm:py-16">
+
+    <!-- CHECK MARK -->
+    <div class="check-circle">
+      <svg class="check-icon w-12 h-12 text-white" fill="none" stroke="currentColor"
+           stroke-width="2.8" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+      </svg>
+    </div>
+
+    <!-- HEADLINE BLOCK -->
+    <div class="text-center max-w-xl fade-up">
+      <div class="inline-flex items-center gap-2 bg-[#E2004B]/15 border border-[#E2004B]/30
+                  text-[#ff6b97] text-[11px] font-bold tracking-[0.18em] uppercase
+                  px-4 py-1.5 rounded-full mb-5">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] animate-pulse"></span>
+        Enrollment Received
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-[1.08] tracking-tight mb-4">
+        <span style="background:linear-gradient(90deg,#FF0055,#ff8fab);
+                     -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+                     background-clip:text;">
+          Thank You.
+        </span><br>
+        We'll be in touch.
+      </h1>
+
+      <p class="text-sm sm:text-base text-white/60 leading-relaxed max-w-md mx-auto">
+        Thank you for reaching out to <strong class="text-white">KONU MySecure</strong>.
+        Your property details are with us and a relationship manager will contact you
+        within <strong class="text-white">24 hours</strong>.
+      </p>
+    </div>
+
+    <!-- 3 STAT CARDS -->
+    <div class="grid grid-cols-3 gap-3 sm:gap-5 max-w-lg w-full mt-10 fade-up">
+      <div class="stat-card">
+        <div class="text-2xl font-extrabold text-white mb-1">24h</div>
+        <div class="text-[11px] text-white/50 font-medium leading-snug">Response<br>Guarantee</div>
+      </div>
+      <div class="stat-card">
+        <div class="text-2xl font-extrabold text-white mb-1">100%</div>
+        <div class="text-[11px] text-white/50 font-medium leading-snug">Verified<br>Officers</div>
+      </div>
+      <div class="stat-card">
+        <div class="text-2xl font-extrabold text-white mb-1">GPS</div>
+        <div class="text-[11px] text-white/50 font-medium leading-snug">On-Site<br>Locked</div>
+      </div>
+    </div>
+
+    <!-- WHAT HAPPENS NEXT -->
+    <div class="bg-white/[0.04] border border-white/10 rounded-2xl p-6 sm:p-8
+                max-w-lg w-full mt-8 fade-up backdrop-blur-md">
+      <h2 class="text-xs font-bold tracking-[0.18em] uppercase text-[#E2004B] mb-6">
+        What Happens Next
+      </h2>
+      <div class="space-y-5">
+
+        <!-- Step 1 -->
+        <div class="flex gap-4 relative">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-[#E2004B] flex items-center
+                      justify-content: center text-white text-xs font-bold z-10
+                      shadow-lg shadow-[#E2004B]/40" style="display:flex;align-items:center;justify-content:center;">
+            1
+          </div>
+          <div class="step-line"></div>
+          <div class="pt-1">
+            <p class="text-sm font-bold text-white">KONU team reviews your details</p>
+            <p class="text-xs text-white/50 mt-0.5 leading-relaxed">
+              Our relationship manager maps your property boundary and prepares your onboarding.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex gap-4 relative">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 border border-white/20
+                      flex items-center justify-content: center text-white text-xs font-bold z-10"
+               style="display:flex;align-items:center;justify-content:center;">
+            2
+          </div>
+          <div class="step-line"></div>
+          <div class="pt-1">
+            <p class="text-sm font-bold text-white">You get a call within 24 hours</p>
+            <p class="text-xs text-white/50 mt-0.5 leading-relaxed">
+              We'll reach you on WhatsApp or phone to confirm your plan and schedule the first visit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-9 h-9 rounded-full bg-white/10 border border-white/20
+                      flex items-center justify-content: center text-white text-xs font-bold"
+               style="display:flex;align-items:center;justify-content:center;">
+            3
+          </div>
+          <div class="pt-1">
+            <p class="text-sm font-bold text-white">First inspection &amp; photo report</p>
+            <p class="text-xs text-white/50 mt-0.5 leading-relaxed">
+              Our verified field officer visits your property and delivers a GPS-confirmed photo
+              report to your phone within 2 hours.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NO PAYMENT REMINDER -->
+    <div class="flex items-center gap-3 mt-6 fade-up">
+      <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586
+             7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+          clip-rule="evenodd"/>
+      </svg>
+      <span class="text-xs text-white/50 font-medium">
+        No upfront payment. No commitment. Just a conversation.
+      </span>
+    </div>
+
+    <!-- AUTO-REDIRECT COUNTDOWN -->
+    <div class="mt-10 text-center fade-up max-w-xs w-full">
+      <p class="text-xs text-white/35 mb-2 font-medium">
+        Redirecting you back to home in <span id="countdown-num" class="text-white/60 font-bold">15</span>s
+      </p>
+      <div class="bg-white/10 rounded-full overflow-hidden h-[3px]">
+        <div id="countdown-bar" style="width:100%"></div>
+      </div>
+      <a href="index.html"
+         class="inline-flex items-center gap-2 mt-5 px-6 py-3 rounded-full
+                bg-[#E2004B] hover:bg-[#BF003F] text-white text-sm font-bold
+                tracking-wide transition-all shadow-lg shadow-[#E2004B]/30
+                hover:scale-105 hover:shadow-[#E2004B]/50">
+        Back to Home
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- FOOTER NOTE -->
+    <p class="mt-10 text-[11px] text-white/25 fade-up text-center">
+      — The KONU Team, Hyderabad &nbsp;•&nbsp; mysecure@konu.in
+    </p>
+
+  </main>
+
+  <script>
+    // ── CONFETTI BURST ────────────────────────────────────────────────
+    (function spawnConfetti() {
+      const colors = ['#E2004B','#FF0055','#ff6b97','#ffffff','#ff8fab','#ffccd5'];
+      const container = document.body;
+      for (let i = 0; i < 80; i++) {
+        const el = document.createElement('div');
+        el.className = 'confetti-piece';
+        el.style.cssText = `
+          left: ${Math.random() * 100}vw;
+          top: -10px;
+          background: ${colors[Math.floor(Math.random() * colors.length)]};
+          width: ${4 + Math.random() * 7}px;
+          height: ${4 + Math.random() * 7}px;
+          border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
+          animation-duration: ${2.5 + Math.random() * 3}s;
+          animation-delay: ${Math.random() * 1.5}s;
+          opacity: ${0.6 + Math.random() * 0.4};
+        `;
+        container.appendChild(el);
+        el.addEventListener('animationend', () => el.remove());
+      }
+    })();
+
+    // ── AUTO-REDIRECT COUNTDOWN (15 seconds) ──────────────────────────
+    let seconds = 15;
+    const numEl = document.getElementById('countdown-num');
+    const barEl = document.getElementById('countdown-bar');
+    const timer = setInterval(() => {
+      seconds--;
+      numEl.textContent = seconds;
+      barEl.style.width = (seconds / 15 * 100) + '%';
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.href = 'index.html';
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>

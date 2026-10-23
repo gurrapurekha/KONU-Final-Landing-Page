@@ -1,0 +1,900 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<!-- Build: 20261022-1636 -->
+<!-- Google Tag Manager — replace GTM-MZKBF4XM with your container ID -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MZKBF4XM');</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
+<title>KONU MySecure — Institutional Real Estate Property Care &amp; Monitoring</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<meta content="KONU MySecure: Scheduled site visits, verified on-ground inspections, photographic audit logs, and proactive care for absentee and diaspora property owners." name="description">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#E2004B',
+              dark: '#BF003F',
+              subtle: '#FFF1F5',
+            },
+            surface: '#FAFAFA',
+            paper: '#FFFFFF',
+            ink: '#0F172A',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style class="">
+@keyframes priceGlitchShift {
+  0%, 100% { transform: translate(0,0) skew(0deg); text-shadow: none; color: #111827; }
+  15% { transform: translate(-1.5px,1px) skew(-1.5deg); text-shadow: 2px 0 #E2004B,-1.5px 0 #00e5ff; color: #E2004B; }
+  30% { transform: translate(1.5px,-1px) skew(1deg); text-shadow: -2px 0 #E2004B,1.5px 0 #00e5ff; color: #111827; }
+  45% { transform: translate(-1px,0.5px) skew(-0.5deg); text-shadow: 1.5px 0 #E2004B,-1px 0 #00e5ff; color: #E2004B; }
+  60% { transform: translate(0,0) skew(0deg); text-shadow: none; color: #E2004B; }
+  85% { color: #E2004B; }
+}
+.card-price {
+  display: inline-block;
+  animation: priceGlitchShift 3.5s ease-in-out infinite;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.card-price:hover {
+  animation: priceGlitchShift 0.8s ease-in-out infinite;
+  color: #E2004B;
+}
+
+/* ── HERO FESTIVE ──────────────────────────────────────── */
+@keyframes ribbonPulse {
+  0%,100% { box-shadow: 0 4px 24px 0 rgba(226,0,75,0.45); }
+  50%      { box-shadow: 0 4px 36px 6px rgba(226,0,75,0.70); }
+}
+@keyframes heroBadgeBounce {
+  0%,100% { transform: rotate(35deg) translateY(0); }
+  50%      { transform: rotate(35deg) translateY(-3px); }
+}
+@keyframes ctaGlow {
+  0%,100% { box-shadow: 0 0 18px 2px rgba(255,0,85,0.40); }
+  50%      { box-shadow: 0 0 32px 8px rgba(255,0,85,0.65); }
+}
+.hero-festive-bg {
+  background-image:
+    linear-gradient(90deg,
+      rgba(255,255,255,0.92) 0%,
+      rgba(255,255,255,0.70) 45%,
+      rgba(255,255,255,0.10) 100%),
+    url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=85');
+  background-size: cover;
+  background-position: center 30%;
+
+
+}
+.hero-ribbon {
+  position: absolute;
+  top: 18px;
+  right: -32px;
+  width: 170px;
+  background: linear-gradient(90deg, #FF0055, #E2004B);
+  color: #fff;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 7px 0;
+  transform: rotate(35deg);
+  transform-origin: top right;
+  animation: ribbonPulse 2.4s ease-in-out infinite, heroBadgeBounce 3s ease-in-out infinite;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+.hero-ribbon::before,
+.hero-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 0;
+  border-style: solid;
+}
+.hero-ribbon::before {
+  left: 0;
+  border-width: 15px 0 15px 10px;
+  border-color: transparent transparent transparent rgba(255,255,255,0.18);
+}
+.hero-ribbon::after {
+  right: 0;
+  border-width: 15px 10px 15px 0;
+  border-color: transparent rgba(255,255,255,0.18) transparent transparent;
+}
+.hero-highlight-card {
+  background: rgba(255,255,255,0.97);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.18), 0 1px 4px rgba(226,0,75,0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.hero-highlight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.22), 0 2px 8px rgba(226,0,75,0.10);
+}
+.hero-earlybird-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 11px;
+  color: #343A46;
+  line-height: 1.5;
+}
+.hero-earlybird-point::before {
+  content: '';
+  flex-shrink: 0;
+  margin-top: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #E2004B;
+}
+
+    param($m)
+    $m.Value -replace 'white-space:[^;]+;', '' -replace 'padding:[^;]+;', 'padding:12px 28px;'
+  
+.hero-cta-btn{ word-break:break-word; white-space:normal; }
+.hero-cta-btn:hover {
+  transform: scale(1.045);
+  filter: brightness(1.08);
+}
+</style><style id="mobile-responsive-fixes">
+/* ── HERO CARDS: 4-col → 2-col → 1-col ────────────── */
+@media (max-width:860px){
+  .hero-cards-grid{ grid-template-columns:repeat(2,1fr) !important; }
+}
+@media (max-width:520px){
+  .hero-cards-grid{ grid-template-columns:1fr !important; }
+}
+
+/* ── HERO HEADLINE: allow wrap on mobile ────────────── */
+@media (max-width:640px){
+  h1[style*="clamp"],h1.hero-headline{
+    white-space:normal !important;
+    font-size:clamp(1.65rem,7vw,2.2rem) !important;
+  }
+}
+
+/* ── HERO SECTION HEIGHT ────────────────────────────── */
+@media (max-width:520px){
+  section.relative.overflow-hidden[style*="min-height"]{
+    min-height:auto !important;
+    padding-top:48px !important;
+    padding-bottom:48px !important;
+  }
+}
+
+/* ── FORM: single column + button full width ─────────── */
+@media (max-width:600px){
+  .kf{ grid-template-columns:1fr !important; }
+  .kf-full{ grid-column:1 !important; }
+  .kf-submit input[type=submit]{
+    width:100% !important;
+    padding:14px 16px !important;
+    font-size:11.5px !important;
+    white-space:normal !important;
+    letter-spacing:0.04em !important;
+  }
+  .kf-submit input[type=reset]{
+    display:block !important;
+    margin:10px auto 0 !important;
+    width:100% !important;
+  }
+}
+
+/* ── HERO CTA BUTTON ────────────────────────────────── */
+@media (max-width:480px){
+  .hero-cta-btn{
+    width:100% !important;
+    justify-content:center !important;
+    padding:13px 20px !important;
+    font-size:12px !important;
+  }
+}
+
+/* ── PRICING CARDS STACK ON MOBILE ─────────────────── */
+@media (max-width:640px){
+  [class*="md:grid-cols-3"]{
+    grid-template-columns:1fr !important;
+  }
+  [class*="md:-translate-y-2"]{
+    transform:none !important;
+  }
+}
+
+/* ── FAQ / AUDIT SECTION PADDING ───────────────────── */
+@media (max-width:520px){
+  .max-w-7xl{ padding-left:16px !important; padding-right:16px !important; }
+}
+</style>
+<style id="hero-cta-btn-fix">
+/* ── RESTORE hero-cta-btn base styles (overrides any broken partial definitions) */
+a.hero-cta-btn,
+.hero-cta-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 14px 36px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, #FF0055 0%, #E6004C 100%) !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  animation: ctaGlow 2.2s ease-in-out infinite !important;
+  transition: transform 0.18s ease, filter 0.18s ease !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+a.hero-cta-btn:hover,
+.hero-cta-btn:hover {
+  transform: scale(1.045) !important;
+  filter: brightness(1.08) !important;
+}
+
+/* ── MOBILE: full-width centred pill, extra prominent ── */
+@media (max-width: 640px) {
+  a.hero-cta-btn,
+  .hero-cta-btn {
+    width: 100% !important;
+    max-width: 340px !important;
+    justify-content: center !important;
+    padding: 16px 24px !important;
+    font-size: 13px !important;
+    box-shadow: 0 0 0 4px rgba(226,0,75,0.18),
+                0 8px 28px rgba(226,0,75,0.45) !important;
+    display: flex !important;
+    margin: 0 auto !important;
+  }
+  /* Centre the CTA wrapper div */
+  div[style*="max-width:900px"][style*="text-align:center"] {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+</style>
+</head>
+<body class="bg-[#FAFAFA] text-[#0F172A] font-sans antialiased selection:bg-[#E2004B] selection:text-white">
+<!-- Build: 20261022-1636 -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZKBF4XM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- 2. REFINED HEADER -->
+<header class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-200/80 z-40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<a aria-label="KONU Home" class="flex items-center" href="#">
+<img alt="KONU" class="h-8 sm:h-9 w-auto object-contain" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='32' viewBox='0 0 90 32'%3E%3Ctext x='0' y='26' font-family='Arial,sans-serif' font-size='24' font-weight='900' fill='%23E2004B' letter-spacing='-1'%3EKONU%3C/text%3E%3C/svg%3E">
+</a>
+<div class="h-4 w-px bg-slate-200"></div>
+<div class="flex items-center text-xs font-semibold tracking-wide text-slate-700">
+<svg class="w-3.5 h-3.5 text-slate-400 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path>
+</svg>
+<span>Hyderabad</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-wider uppercase text-slate-600">
+<a class="hover:text-[#E2004B] transition-colors" href="#reality">Overview</a>
+<a class="hover:text-[#E2004B] transition-colors" href="#services">Services</a>
+<a class="hover:text-[#E2004B] transition-colors" href="#how-it-works">Process</a>
+<a class="hover:text-[#E2004B] transition-colors" href="#trust">Audit Protocol</a>
+<a class="hover:text-[#E2004B] transition-colors" href="#pricing">Plans</a>
+<a class="hover:text-[#E2004B] transition-colors" href="#faq">FAQ</a>
+</nav>
+<div class="hidden md:flex items-center gap-3 ml-auto">
+  <!-- Festive Offer Badge -->
+  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#FF0055 0%,#E2004B 100%);box-shadow:none;border:2px solid rgba(255,255,255,0.35);text-align:center;flex-shrink:0;">
+    <span style="font-size:7.5px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:0.1em;line-height:1.25;">FESTIVE</span>
+    <span style="font-size:7.5px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:0.1em;line-height:1.25;">OFFER</span>
+    <span style="width:22px;height:1px;background:rgba(255,255,255,0.5);margin:2px 0;display:block;"></span>
+    <span style="font-size:6px;font-weight:700;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:0.06em;line-height:1.3;">Limited</span>
+    <span style="font-size:6px;font-weight:700;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:0.06em;line-height:1.3;">Time Only</span>
+  </div>
+  <!-- Enquire Now Button -->
+  <a href="#enroll"
+     style="display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,#FF0055 0%,#E6004C 100%);color:#fff;font-size:11px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;box-shadow:none;transition:transform 0.18s ease,filter 0.18s ease;white-space:nowrap;"
+     onmouseover="this.style.transform='scale(1.045)';this.style.filter='brightness(1.08)'"
+     onmouseout="this.style.transform='scale(1)';this.style.filter='none'"
+     data-gtm-event="cta_click" data-gtm-label="header_enquire_now">
+    Enquire Now
+    <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+  </a>
+</div>
+
+
+
+
+
+
+
+</div>
+</header>
+<main>
+<!-- 3. HERO SECTION — LUXURY FESTIVE BANNER -->
+<section class="relative overflow-hidden border-b border-slate-200/60" style="min-height:clamp(500px,78vh,780px);display:flex;align-items:center;">
+
+  <!-- BACKGROUND: colorful luxury villa at golden hour -->
+  <!-- BACKGROUND: luxury villa architectural facade -->
+  <div class="absolute inset-0 z-0" style="background-image:linear-gradient(90deg,rgba(255,255,255,0.92) 0%,rgba(255,255,255,0.70) 45%,rgba(255,255,255,0.10) 100%),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=85');background-size:cover;background-position:center 30%;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- CONTENT -->
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+
+    <!-- EYEBROW -->
+    <div class="flex items-center gap-3 mb-3">
+      <span style="height:1px;width:28px;background:#E2004B;display:block;flex-shrink:0;"></span>
+      <span style="font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#555D6B;">This Festive Season</span>
+    </div>
+
+    <!-- HEADLINE -->
+    <h1 style="font-size:clamp(1.55rem,4.2vw,3.15rem);font-weight:800;line-height:1.06;letter-spacing:-0.02em;color:#0F172A;margin-bottom:10px;">
+      Last &amp; Final <span style="color:#E2004B;">Bumper Offer.</span>
+    </h1>
+
+    <!-- SUBTITLE -->
+    <p style="font-size:clamp(13px,1.35vw,15px);color:#343A46;line-height:1.65;max-width:500px;margin-bottom:24px;">
+      Unlock special festive prices and exclusive member benefits with KONU.
+    </p>
+
+    <!-- 4 CARDS GRID -->
+    <div class="hero-cards-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:900px;align-items:stretch;margin-bottom:24px;">
+
+      <!-- CARD 1: Early Stage Offer -->
+      <div style="background:#FFF1F5;border-radius:12px;padding:14px 13px;box-shadow:0 2px 10px rgba(226,0,75,0.10);border:1px solid rgba(226,0,75,0.18);display:flex;flex-direction:column;gap:9px;">
+        <div style="display:flex;align-items:center;gap:7px;">
+          <span style="width:20px;height:20px;border-radius:6px;background:linear-gradient(135deg,#FF0055,#E2004B);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="11" height="11" viewBox="0 0 20 20" fill="white"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </span>
+          <span style="font-size:10.5px;font-weight:800;color:#0F172A;text-transform:uppercase;letter-spacing:0.04em;">Early Stage Offer</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <div style="display:flex;align-items:flex-start;gap:5px;font-size:10.5px;color:#343A46;line-height:1.45;">
+            <span style="width:5px;height:5px;border-radius:50%;background:#E2004B;flex-shrink:0;margin-top:4px;"></span>
+            <span><strong style="color:#0F172A;font-weight:600;">Festive Pricing</strong> &mdash; 6 Months from &#8377;7,999 | 1 Year from &#8377;12,999 <span style="color:#888;">(+GST)</span></span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:5px;font-size:10.5px;color:#343A46;line-height:1.45;">
+            <span style="width:5px;height:5px;border-radius:50%;background:#E2004B;flex-shrink:0;margin-top:4px;"></span>
+            <span><strong style="color:#0F172A;font-weight:600;">Free Property Check</strong> &mdash; Photos &amp; short report <span style="color:#888;">(First 25 slots)</span></span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:5px;font-size:10.5px;color:#343A46;line-height:1.45;">
+            <span style="width:5px;height:5px;border-radius:50%;background:#E2004B;flex-shrink:0;margin-top:4px;"></span>
+            <span><strong style="color:#0F172A;font-weight:600;">Founding Member Lock</strong> &mdash; Rate locked + Badge <span style="color:#888;">(First 10)</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: REFER & EARN -->
+      <div style="background:#FFF1F5;border-radius:12px;padding:14px 13px;box-shadow:0 2px 10px rgba(226,0,75,0.10);border:1px solid rgba(226,0,75,0.14);display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="width:20px;height:20px;border-radius:6px;background:linear-gradient(135deg,#FF0055,#E2004B);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </span>
+          <span style="font-size:10.5px;font-weight:800;color:#0F172A;text-transform:uppercase;letter-spacing:0.04em;">Refer &amp; Earn</span>
+        </div>
+        <p style="font-size:10.5px;color:#343A46;line-height:1.5;margin:0;">
+          <strong style="color:#E2004B;">&#8377;500 service credit</strong> when someone you refer buys a plan. Capped at 3 referrals per customer.
+        </p>
+      </div>
+
+      <!-- CARD 3: +1 MONTH FREE -->
+      <div style="background:#FFF1F5;border-radius:12px;padding:14px 13px;box-shadow:0 2px 10px rgba(226,0,75,0.10);border:1px solid rgba(226,0,75,0.14);display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:flex-start;gap:6px;">
+          <span style="width:20px;height:20px;border-radius:6px;background:linear-gradient(135deg,#FF0055,#E2004B);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+          </span>
+          <span style="font-size:10.5px;font-weight:800;color:#0F172A;text-transform:uppercase;letter-spacing:0.04em;line-height:1.3;">+1 Month Free on Annual Plans</span>
+        </div>
+        <p style="font-size:10.5px;color:#343A46;line-height:1.5;margin:0;">
+          13 months for the festive 1-year price <span style="color:#666;">(approx. 19&ndash;21% below regular monthly rate).</span>
+        </p>
+      </div>
+
+      <!-- CARD 4: NO GST -->
+      <div style="background:#FFF1F5;border-radius:12px;padding:14px 13px;box-shadow:0 2px 10px rgba(226,0,75,0.10);border:1px solid rgba(226,0,75,0.14);display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:center;gap:6px;">
+          <span style="width:20px;height:20px;border-radius:6px;background:linear-gradient(135deg,#FF0055,#E2004B);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+          </span>
+          <span style="font-size:10.5px;font-weight:800;color:#0F172A;text-transform:uppercase;letter-spacing:0.04em;">No GST Applicable</span>
+        </div>
+        <p style="font-size:10.5px;color:#343A46;line-height:1.5;margin:0;">
+          Valid on more than two properties.
+        </p>
+        <span style="display:inline-flex;align-self:flex-start;font-size:9.5px;font-weight:700;color:#047857;background:#ECFDF5;border:1px solid #A7F3D0;padding:2px 8px;border-radius:999px;margin-top:2px;">Save More</span>
+      </div>
+
+    </div>
+
+    <!-- CENTERED CTA BUTTON -->
+    <div style="max-width:900px;text-align:center;">
+      <a href="#enroll" class="hero-cta-btn" style="margin:0 auto;"
+         data-gtm-event="cta_click" data-gtm-label="hero_festive_enquire_now"
+         onclick="kTrack('cta_click','hero_festive_enquire_now')">
+        Enquire Now
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+<style>
+@media (max-width:900px){
+  .hero-cards-grid{grid-template-columns:repeat(2,1fr)!important;}
+}
+@media (max-width:540px){
+  .hero-cards-grid{grid-template-columns:1fr!important;}
+  h1.hero-headline{white-space:normal!important;font-size:clamp(1.7rem,7vw,2.4rem)!important;}
+}
+</style>
+</section>
+<!-- 4. REALITY / RELATABLE DILEMMAS -->
+<section class="py-14 sm:py-20 bg-[#FAFAFA] border-b border-slate-200/80" id="reality"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="max-w-2xl mb-10 sm:mb-14"><span class="bg-[#E2004B]/10 text-[#E2004B] border border-[#E2004B]/20 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">WHY KONU SECURE</span><h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight leading-tight">Taking care of your property<br>shouldn't feel like a <span class="text-[#E2004B]">chore.</span></h2><p class="mt-3 text-xs sm:text-sm text-[#343A46] leading-relaxed font-normal">Whether you are balancing busy workdays across the city or managing life from abroad, visiting distant plots and houses shouldn't take over your personal calendar.</p></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"><div class="bg-white p-6 rounded-xl border border-slate-200/80 border-t-2 border-t-[#E2004B] shadow-xs flex flex-col justify-between hover:shadow-md transition-all"><div><div class="flex items-center justify-between mb-3"><span class="text-xs font-bold text-[#E2004B]">01 / TIME</span><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B]"></span></div><h3 class="text-base font-bold text-[#0F172A] mb-2">Hard to Find Time</h3><p class="text-xs text-[#343A46] leading-relaxed">Between busy workdays and weekends, visiting your plot or villa takes hours of stressful city travel just for a quick check.</p></div><div class="pt-4 mt-5 border-t border-slate-100 text-[11px] font-semibold text-[#E2004B]">Reclaim your weekends →</div></div><div class="bg-white p-6 rounded-xl border border-slate-200/80 border-t-2 border-t-[#E2004B] shadow-xs flex flex-col justify-between hover:shadow-md transition-all"><div><div class="flex items-center justify-between mb-3"><span class="text-xs font-bold text-[#E2004B]">02 / DISTANCE</span><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B]"></span></div><h3 class="text-base font-bold text-[#0F172A] mb-2">Living Far Away or Abroad</h3><p class="text-xs text-[#343A46] leading-relaxed">Whether you are in another state or overseas, checking boundary walls in person isn't easy without a trusted ground team.</p></div><div class="pt-4 mt-5 border-t border-slate-100 text-[11px] font-semibold text-[#E2004B]">Updates right to your phone →</div></div><div class="bg-white p-6 rounded-xl border border-slate-200/80 border-t-2 border-t-[#E2004B] shadow-xs flex flex-col justify-between hover:shadow-md transition-all"><div><div class="flex items-center justify-between mb-3"><span class="text-xs font-bold text-[#E2004B]">03 / FAMILY</span><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B]"></span></div><h3 class="text-base font-bold text-[#0F172A] mb-2">Zero Family Burden</h3><p class="text-xs text-[#343A46] leading-relaxed">Spare aging parents or busy relatives the physical fatigue and hassle of driving out to inspect remote or overgrown land.</p></div><div class="pt-4 mt-5 border-t border-slate-100 text-[11px] font-semibold text-[#E2004B]">No stress on relatives →</div></div><div class="bg-white p-6 rounded-xl border border-slate-200/80 border-t-2 border-t-[#E2004B] shadow-xs flex flex-col justify-between hover:shadow-md transition-all"><div><div class="flex items-center justify-between mb-3"><span class="text-xs font-bold text-[#E2004B]">04 / PROOF</span><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B]"></span></div><h3 class="text-base font-bold text-[#0F172A] mb-2">Real Updates, Not Hearsay</h3><p class="text-xs text-[#343A46] leading-relaxed">Get clear, timestamped photos of your property instead of guessing or relying on hearsay from casual acquaintances.</p></div><div class="pt-4 mt-5 border-t border-slate-100 text-[11px] font-semibold text-[#E2004B]">Verified photo evidence →</div></div></div></div></section>
+<!-- 5. SERVICES ARCHITECTURE -->
+<section class="py-14 sm:py-24 bg-white border-b border-slate-200/80" id="services"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="max-w-2xl mb-12 sm:mb-16"><span class="bg-[#E2004B]/10 text-[#E2004B] border border-[#E2004B]/20 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">WHAT WE DO FOR YOU</span><h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight leading-tight">Clear, dependable care for your <span class="text-[#E2004B]">land and home.</span></h2><p class="mt-3 text-xs sm:text-sm text-[#343A46] leading-relaxed">Routine safety visits and photo updates are included automatically. If you ever need extra help with cleanups or legal checks, we handle it on demand.</p></div><div class="mb-14"><div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200"><div><h3 class="text-sm font-bold tracking-wider uppercase text-[#0F172A]">Included in Every Plan</h3><p class="text-xs text-[#555D6B] mt-0.5">Standard care included with your KONU subscription</p></div><span class="text-xs font-bold text-[#555D6B] uppercase tracking-widest hidden sm:inline">Standard Care</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6"><div class="border border-slate-200 rounded-xl overflow-hidden bg-white flex flex-col justify-between shadow-xs"><div class="aspect-[16/10] overflow-hidden bg-slate-100 border-b border-slate-100"><img alt="Field officer checking property gate" class="w-full h-full object-cover" src="img-visits.jpg"></div><div class="p-5 sm:p-6 flex-1 flex flex-col justify-between"><div><div class="text-xs font-bold text-[#555D6B] mb-1">01 / VISITS</div><h4 class="text-base font-bold text-[#0F172A] mb-2">Regular Property Visits</h4><p class="text-xs text-[#343A46] leading-relaxed">Our verified team visits your plot or villa every two weeks to inspect gates, fences, and surroundings following a strict checklist.</p></div><div class="pt-4 mt-5 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Cadence: Every 2 weeks</div></div></div><div class="border border-slate-200 rounded-xl overflow-hidden bg-white flex flex-col justify-between shadow-xs"><div class="aspect-[16/10] overflow-hidden bg-slate-100 border-b border-slate-100"><img alt="Inspection report and high-resolution photo logs" class="w-full h-full object-cover" src="img-photos.jpg"></div><div class="p-5 sm:p-6 flex-1 flex flex-col justify-between"><div><div class="text-xs font-bold text-[#555D6B] mb-1">02 / PHOTOS</div><h4 class="text-base font-bold text-[#0F172A] mb-2">High-Resolution Photo Updates</h4><p class="text-xs text-[#343A46] leading-relaxed">Clear, date-stamped photos of all 4 corners, entrance gates, and boundary walls delivered straight to your phone within 2 hours.</p></div><div class="pt-4 mt-5 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Delivery: Straight to your phone</div></div></div><div class="border border-slate-200 rounded-xl overflow-hidden bg-white flex flex-col justify-between shadow-xs"><div class="aspect-[16/10] overflow-hidden bg-slate-100 border-b border-slate-100"><img alt="Secured perimeter and boundary land assessment" class="w-full h-full object-cover" src="img-safety.jpg"></div><div class="p-5 sm:p-6 flex-1 flex flex-col justify-between"><div><div class="text-xs font-bold text-[#555D6B] mb-1">03 / SAFETY</div><h4 class="text-base font-bold text-[#0F172A] mb-2">Boundary &amp; Safety Checks</h4><p class="text-xs text-[#343A46] leading-relaxed">Immediate alerts if someone dumps debris, damages fencing, or tries to encroach on your property boundary.</p></div><div class="pt-4 mt-5 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Status: Fast alerts if anything shifts</div></div></div></div></div><div class=""><div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200"><div><h3 class="text-sm font-bold tracking-wider uppercase text-[#0F172A]">Extra Help Whenever You Need It</h3><p class="text-xs text-[#555D6B] mt-0.5">Optional services activated only when you request them</p></div><span class="text-xs font-bold text-[#555D6B] uppercase tracking-widest hidden sm:inline">On-Demand</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6"><div class="p-5 sm:p-6 rounded-xl border border-slate-200 bg-white flex flex-col justify-between border-l-4 border-l-[#E2004B] hover:shadow-sm transition-all"><div><div class="flex items-center justify-between mb-2"><span class="text-xs font-bold text-[#E2004B]">01 / CLEANUP &amp; REPAIR</span><span class="text-[10px] font-bold text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full border border-[#E2004B]/20">As Needed</span></div><h4 class="text-sm font-bold text-[#0F172A] mb-1.5">Maintenance &amp; Cleanups</h4><p class="text-xs text-[#343A46] leading-relaxed">Need weed clearance, fence mending, painting, or lock replacements? We supervise trusted local workers at actual cost.</p></div><div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Zero hidden vendor markup</div></div><div class="p-5 sm:p-6 rounded-xl border border-slate-200 bg-white flex flex-col justify-between border-l-4 border-l-[#E2004B] hover:shadow-sm transition-all"><div><div class="flex items-center justify-between mb-2"><span class="text-xs font-bold text-[#E2004B]">02 / LEGAL</span><span class="text-[10px] font-bold text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full border border-[#E2004B]/20">Support</span></div><h4 class="text-sm font-bold text-[#0F172A] mb-1.5">Legal &amp; Revenue Document Checks</h4><p class="text-xs text-[#343A46] leading-relaxed">Assistance with Encumbrance Certificates (EC), property tax verification, and title records through registered advocates.</p></div><div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Verified legal partners</div></div><div class="p-5 sm:p-6 rounded-xl border border-slate-200 bg-white flex flex-col justify-between border-l-4 border-l-[#E2004B] hover:shadow-sm transition-all"><div><div class="flex items-center justify-between mb-2"><span class="text-xs font-bold text-[#E2004B]">03 / VALUATION</span><span class="text-[10px] font-bold text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full border border-[#E2004B]/20">Insight</span></div><h4 class="text-sm font-bold text-[#0F172A] mb-1.5">Market Valuation Insights</h4><p class="text-xs text-[#343A46] leading-relaxed">Quarterly updates on real transaction prices, government circle rates, and road developments around your land.</p></div><div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Clear neighborhood trends</div></div><div class="p-5 sm:p-6 rounded-xl border border-slate-200 bg-white flex flex-col justify-between border-l-4 border-l-[#E2004B] hover:shadow-sm transition-all"><div><div class="flex items-center justify-between mb-2"><span class="text-xs font-bold text-[#E2004B]">04 / URGENT CHECK</span><span class="text-[10px] font-bold text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full border border-[#E2004B]/20">Priority</span></div><h4 class="text-sm font-bold text-[#0F172A] mb-1.5">Fast Emergency Checks</h4><p class="text-xs text-[#343A46] leading-relaxed">Quick officer dispatch after heavy storms, localized boundary rumors, or unusual activity in the neighborhood.</p></div><div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Quick mobilization when needed</div></div></div></div></div></section>
+<!-- 6. THREE-STEP PROCESS -->
+<section class="py-14 sm:py-24 bg-[#FAFAFA] border-b border-slate-200/80" id="how-it-works"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="max-w-2xl mb-12 sm:mb-16"><span class="bg-[#E2004B]/10 text-[#E2004B] border border-[#E2004B]/20 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">HOW IT WORKS</span><h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight leading-tight">Three simple steps to <span class="text-[#E2004B]">total peace of mind</span></h2><p class="mt-3 text-xs sm:text-sm text-[#343A46] leading-relaxed">No complicated paperwork or long waits. A clear, dependable process designed to keep you updated without any effort.</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8"><div class="p-6 sm:p-7 rounded-2xl border border-slate-200 bg-white flex flex-col justify-between shadow-xs hover:border-[#E2004B]/40 transition-all"><div><div class="flex items-baseline justify-between border-b border-slate-100 pb-4 mb-5"><span class="text-3xl font-extrabold text-[#E2004B]">01</span><span class="text-[10px] font-bold uppercase tracking-widest text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full">STEP ONE</span></div><h3 class="text-base font-bold text-[#0F172A] mb-2">Choose Your Plan</h3><p class="text-xs sm:text-sm text-[#343A46] leading-relaxed">Pick a 6-month or 1-year package tailored to your property size. Your relationship manager maps your boundary within 24 hours.</p></div><div class="pt-4 mt-6 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Quick 24-hr onboarding</div></div><div class="p-6 sm:p-7 rounded-2xl border border-slate-200 bg-white flex flex-col justify-between shadow-xs hover:border-[#E2004B]/40 transition-all"><div><div class="flex items-baseline justify-between border-b border-slate-100 pb-4 mb-5"><span class="text-3xl font-extrabold text-[#E2004B]">02</span><span class="text-[10px] font-bold uppercase tracking-widest text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full">STEP TWO</span></div><h3 class="text-base font-bold text-[#0F172A] mb-2">We Inspect Your Property</h3><p class="text-xs sm:text-sm text-[#343A46] leading-relaxed">Our on-ground surveyor visits with a standardized safety checklist and GPS lock, checking gates, boundary corners, and trees.</p></div><div class="pt-4 mt-6 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Standardized safety checklist</div></div><div class="p-6 sm:p-7 rounded-2xl border border-slate-200 bg-white flex flex-col justify-between shadow-xs hover:border-[#E2004B]/40 transition-all"><div><div class="flex items-baseline justify-between border-b border-slate-100 pb-4 mb-5"><span class="text-3xl font-extrabold text-[#E2004B]">03</span><span class="text-[10px] font-bold uppercase tracking-widest text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full">STEP THREE</span></div><h3 class="text-base font-bold text-[#0F172A] mb-2">Get Photo Updates on Your Phone</h3><p class="text-xs sm:text-sm text-[#343A46] leading-relaxed">View clear, date-stamped inspection photos and summary notes right inside your phone within 2 hours of every visit.</p></div><div class="pt-4 mt-6 border-t border-slate-100 text-[11px] font-semibold text-[#555D6B]">Updates delivered within 2 hrs</div></div></div></div></section>
+<!-- 7. ELEVATED: TRANSPARENCY & ACCOUNTABILITY (SURVEYOR AUDIT LOG MOCKUP) -->
+<section class="py-14 sm:py-24 bg-white border-b border-slate-200/80" id="trust">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="max-w-2xl mb-12 sm:mb-16"><span class="bg-[#E2004B]/10 text-[#E2004B] border border-[#E2004B]/20 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">SEE SAMPLE REPORT</span><h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight leading-tight">Know exactly what happened,<br><span class="text-[#E2004B]">every single visit.</span></h2><p class="mt-3 text-xs sm:text-sm text-[#343A46] leading-relaxed">Clear inspection reports sent directly to your phone—with GPS coordinates, verified checklist, and photos of every corner.</p></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"><div class="lg:col-span-7 flex justify-center w-full"><div class="w-full max-w-[380px] sm:max-w-[400px] bg-slate-900 p-3 sm:p-4 rounded-[42px] sm:rounded-[48px] shadow-2xl border-4 border-slate-800 relative ring-1 ring-slate-900/50"><div class="absolute top-0 left-1/2 -translate-x-1/2 h-5 sm:h-6 w-32 sm:w-36 bg-slate-900 rounded-b-2xl z-20 flex items-center justify-center"><div class="w-12 sm:w-14 h-3.5 sm:h-4 bg-black rounded-full flex items-center justify-end pr-2"><span class="w-2 h-2 rounded-full bg-[#1e293b]"></span></div></div><div class="bg-[#FAFAFA] rounded-[34px] sm:rounded-[38px] overflow-hidden border border-slate-200/80 flex flex-col pt-3 pb-5"><div class="flex justify-between items-center px-6 pt-1 pb-2 text-[11px] font-bold text-slate-800 select-none z-10"><span class="font-semibold text-xs tracking-tight">9:41</span><div class="flex items-center space-x-1.5 text-slate-700"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z" opacity="0.3"></path><path d="M12 6a6 6 0 0 0-6 6c0 1.45.52 2.78 1.38 3.82L12 19.18l4.62-3.36A5.96 5.96 0 0 0 18 12a6 6 0 0 0-6-6z"></path></svg><svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zm6-4a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zm6-3a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg><div class="w-5 h-2.5 border border-slate-700 rounded-sm p-0.5 flex items-center"><div class="h-full w-full bg-slate-800 rounded-2xs"></div></div></div></div><div class="px-4 py-2 border-b border-slate-200/90 bg-white flex items-center justify-between"><div class="flex items-center space-x-2"><div class="w-6 h-6 rounded-md bg-[#E2004B] flex items-center justify-center text-white font-bold text-[10px]">K</div><div><span class="text-[9px] font-bold tracking-widest uppercase text-[#555D6B] block leading-none">KONU MySecure Audit</span><span class="text-xs font-bold text-[#0F172A] leading-tight block mt-0.5">Villa #42 • Jubilee Hills</span></div></div><span class="text-[9px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100/80 px-2 py-0.5 rounded-full border border-emerald-300/40">Verified</span></div><div class="px-4 py-3 space-y-3"><div class="grid grid-cols-2 gap-2 bg-white p-2.5 rounded-xl border border-slate-200/70 text-[11px]"><div><span class="text-slate-400 block text-[9px] font-bold uppercase tracking-wider">Audit Timestamp</span><span class="font-bold text-[#0F172A] block mt-0.5">14 Oct, 11:20 AM</span></div><div><span class="text-slate-400 block text-[9px] font-bold uppercase tracking-wider">Officer ID</span><span class="font-bold text-[#0F172A] block mt-0.5">KONU-HYD-044</span></div><div class="col-span-2 pt-1 border-t border-slate-100 flex items-center justify-between text-[10px]"><span class="text-slate-500 font-mono">GPS: 17.4331°N, 78.4071°E</span><span class="text-emerald-700 font-semibold">100% On-Site Lock</span></div></div><div class="space-y-1.5"><div class="flex items-center justify-between px-1"><span class="text-[10px] font-bold uppercase tracking-wider text-[#555D6B]">Inspection Checklist</span><span class="text-[10px] font-bold text-[#E2004B]">4 / 4 Cleared</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-white border border-slate-200/80 text-[11px]"><span class="font-semibold text-[#0F172A]">Boundary &amp; Gate Integrity</span><span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200/60 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mr-1.5"></span>Secure</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-white border border-slate-200/80 text-[11px]"><span class="font-semibold text-[#0F172A]">Grounds &amp; Vegetation Clearance</span><span class="text-[10px] text-[#0F172A] font-bold bg-slate-100 px-2 py-0.5 rounded flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-500 mr-1.5"></span>Logged</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-white border border-slate-200/80 text-[11px]"><span class="font-semibold text-[#0F172A]">Water &amp; Drainage Flow Paths</span><span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200/60 flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600 mr-1.5"></span>Clear</span></div><div class="flex items-center justify-between p-2 rounded-lg bg-white border border-slate-200/80 text-[11px]"><span class="font-semibold text-[#0F172A]">Perimeter Placards &amp; Fencing</span><span class="text-[10px] text-[#0F172A] font-bold bg-slate-100 px-2 py-0.5 rounded flex items-center"><span class="w-1.5 h-1.5 rounded-full bg-slate-500 mr-1.5"></span>Intact</span></div></div><div class="p-2.5 rounded-xl bg-white border border-slate-200/80"><div class="flex items-center justify-between text-[11px] mb-2"><span class="font-bold text-[#0F172A] flex items-center"><span class="w-2 h-2 rounded-full bg-[#E2004B] mr-1.5"></span>Geotagged Photographic Log</span><span class="text-[10px] font-bold text-[#E2004B] bg-[#FFF1F5] px-2 py-0.5 rounded-full">12 Files</span></div><div class="grid grid-cols-3 gap-1.5"><div class="aspect-video bg-slate-200 rounded-md overflow-hidden relative border border-slate-200"><img src="img-gate.jpg" class="w-full h-full object-cover" alt="Boundary Check"><span class="absolute bottom-0.5 left-0.5 bg-black/75 text-white text-[7px] px-1 rounded font-mono">#01 Gate</span></div><div class="aspect-video bg-slate-200 rounded-md overflow-hidden relative border border-slate-200"><img src="img-north.jpg" class="w-full h-full object-cover" alt="Perimeter"><span class="absolute bottom-0.5 left-0.5 bg-black/75 text-white text-[7px] px-1 rounded font-mono">#02 North</span></div><div class="aspect-video bg-slate-200 rounded-md overflow-hidden relative border border-slate-200"><img src="img-meter.jpg" class="w-full h-full object-cover" alt="Audit Slip"><span class="absolute bottom-0.5 left-0.5 bg-black/75 text-white text-[7px] px-1 rounded font-mono">#03 Meter</span></div></div></div><div class="pt-1 text-[10px] text-slate-500 flex justify-between font-mono"><span class="truncate max-w-[170px]">Hash: e839a..9b1</span><span class="text-[#E2004B] font-sans font-semibold">Tamper-Proof • Encrypted</span></div></div></div></div></div><div class="lg:col-span-5 border border-slate-200 rounded-2xl p-6 sm:p-8 bg-white flex flex-col justify-between shadow-xs relative overflow-hidden"><div><span class="bg-[#E2004B]/10 text-[#E2004B] border border-[#E2004B]/20 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">HONEST PROMISE</span><h3 class="text-lg sm:text-xl font-bold text-[#0F172A] mb-3 tracking-tight">What happens if we spot an issue?</h3><p class="text-xs sm:text-sm text-[#343A46] leading-relaxed mb-6">If our officers notice overgrown shrubs, broken fencing, or neighbor activity, we never take unauthorized actions or bill you secretly. Here is exactly what happens:</p><div class="space-y-4"><div class="border-l-4 border-[#E2004B] bg-[#FFF1F5]/40 pl-4 py-3 rounded-r-lg"><span class="text-xs font-bold text-[#0F172A] flex items-center"><span class="w-2 h-2 rounded-full bg-[#E2004B] mr-2"></span>01 / Fast alert within 2 hours</span><p class="text-xs text-[#343A46] mt-1 leading-relaxed">We notify you right away on WhatsApp and email with date-stamped photos of the exact spot.</p></div><div class="border-l-4 border-slate-300 pl-4 py-3 rounded-r-lg bg-slate-50"><span class="text-xs font-bold text-[#0F172A] block">02 / Clear repair estimate</span><p class="text-xs text-[#343A46] mt-1 leading-relaxed">We gather quotes from trusted local vendors for materials and repairs—with no hidden markup.</p></div><div class="border-l-4 border-slate-300 pl-4 py-3 rounded-r-lg bg-slate-50"><span class="text-xs font-bold text-[#0F172A] block">03 / Zero work without your approval</span><p class="text-xs text-[#343A46] mt-1 leading-relaxed">We only commission work once you have reviewed the estimate and given your written go-ahead.</p></div></div></div><div class="mt-8 pt-4 border-t border-slate-100 flex items-center space-x-2 text-xs text-[#555D6B] font-medium"><svg class="w-4 h-4 text-emerald-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg><span class="">100% transparent. No surprise bills or hidden fees.</span></div></div></div></div>
+</section>
+<!-- 8. PLANS & PRICING -->
+<section class="py-14 sm:py-24 bg-[#FAFAFA] border-b border-slate-200/80" data-purpose="pricing-section" id="pricing">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14"><span class="bg-[#E2004B]/10 text-[#E2004B] border border-[#E2004B]/20 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">SIMPLE PRICING</span><h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight leading-tight">Simple, transparent <span class="text-[#E2004B]">pricing</span></h2><p class="mt-3 text-xs sm:text-sm text-[#343A46] leading-relaxed">No hidden charges or surprise renewal fees. Choose what fits your property.</p><div class="mt-8 inline-flex items-center p-1 rounded-full bg-white border border-slate-200 shadow-sm" role="tablist"><button class="px-5 py-2 rounded-md text-xs font-bold transition-all text-slate-600 hover:text-black" id="toggleSixMonth" onclick="switchPricing('6month')" type="button">6-Month Agreement</button><button class="px-5 py-2 rounded-md text-xs font-bold transition-all bg-[#0F172A] text-white" id="toggleOneYear" onclick="switchPricing('1year')" type="button">1-Year Agreement</button></div></div>
+<!-- Pricing Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch max-w-6xl mx-auto">
+
+<div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between hover:border-[#E2004B]/40 hover:shadow-md transition-all" data-purpose="pricing-card"><div><div class="mb-4"><span class="plan-period-text text-[11px] font-bold uppercase tracking-wider text-[#E2004B]">1-Year Agreement</span><h3 class="text-lg font-bold text-[#0F172A] mt-1">Under 1,000 Sq. Yds.</h3><p class="text-xs text-[#555D6B] mt-0.5">Residential plots, individual villas &amp; houses</p></div><div class="py-4 my-2 border-y border-slate-100"><div class="flex items-baseline space-x-2 min-w-0 flex-wrap"><span class="card-price text-2xl font-extrabold text-[#0F172A]">&#8377;11,999*</span><span class="card-strike text-sm font-semibold text-[#555D6B] line-through">&#8377;14,999</span></div><span class="card-save inline-block mt-1 text-[11px] font-bold text-[#E2004B]">Annual Privilege &bull; Save &#8377;3,000</span></div><div class="space-y-1.5 mb-2.5"><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Festive Pricing &mdash; 6 Months from &#8377;7,999 | 1 Year from &#8377;12,999 (+GST)</span></div><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Free Property Check &mdash; Photos &amp; short report included (First 25 slots)</span></div><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Founding Member Lock &mdash; Rate locked at renewal + Badge (First 10 users)</span></div></div><div class="space-y-2 mt-3 mb-2"><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>Refer &amp; Earn &mdash; &#8377;500 service credit when someone you refer buys a plan. Capped at 3 referrals per customer.</span></div><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>+1 Month Free on Annual Plans &mdash; 13 months for the festive 1-year price (approx. 19-21% below regular monthly rate).</span></div><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>No GST Applicable &mdash; Valid on more than two properties.</span></div></div><ul class="space-y-3 my-6 text-xs text-[#343A46]"><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Properties up to 1,000 Sq. Yards</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Bi-weekly scheduled surveyor site visits</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Date-stamped visual audit log in owner portal</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Perimeter, gate &amp; boundary checks</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Dedicated relationship manager assignment</span></li></ul></div><button class="w-full py-3 px-4 rounded-xl font-bold text-xs uppercase tracking-wider border border-slate-200 bg-white hover:bg-[#FFF1F5] hover:text-[#E2004B] hover:border-[#E2004B]/30 text-[#0F172A] transition-colors" type="button" data-gtm-event="plan_select" data-gtm-label="plan_under_1000sqyd" onclick="kTrack('plan_select','plan_under_1000sqyd'); scrollToEnroll(this)">Select Agreement</button></div>
+
+<div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-xs flex flex-col justify-between hover:border-[#E2004B]/40 hover:shadow-md transition-all" data-purpose="pricing-card"><div><div class="mb-4"><span class="plan-period-text text-[11px] font-bold uppercase tracking-wider text-[#E2004B]">1-Year Agreement</span><h3 class="text-lg font-bold text-[#0F172A] mt-1">1,000 Sq. Yds. to 1 Acre</h3><p class="text-xs text-[#555D6B] mt-0.5">Large plots, gated community layouts &amp; estates</p></div><div class="py-4 my-2 border-y border-slate-100"><div class="flex items-baseline space-x-2 min-w-0 flex-wrap"><span class="card-price text-2xl font-extrabold text-[#0F172A]">&#8377;19,999*</span><span class="card-strike text-sm font-semibold text-[#555D6B] line-through">&#8377;24,999</span></div><span class="card-save inline-block mt-1 text-[11px] font-bold text-[#E2004B]">Annual Privilege: Save &#8377;5,000</span></div><div class="space-y-1.5 mb-2.5"><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Festive Pricing &mdash; 6 Months from &#8377;7,999 | 1 Year from &#8377;12,999 (+GST)</span></div><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Free Property Check &mdash; Photos &amp; short report included (First 25 slots)</span></div><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Founding Member Lock &mdash; Rate locked at renewal + Badge (First 10 users)</span></div></div><div class="space-y-2 mt-3 mb-2"><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>Refer &amp; Earn &mdash; &#8377;500 service credit when someone you refer buys a plan. Capped at 3 referrals per customer.</span></div><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>+1 Month Free on Annual Plans &mdash; 13 months for the festive 1-year price (approx. 19-21% below regular monthly rate).</span></div><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>No GST Applicable &mdash; Valid on more than two properties.</span></div></div><ul class="space-y-3 my-6 text-xs text-[#343A46]"><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Properties 1,000 Sq. Yds. to 1 Acre</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Bi-weekly comprehensive site walkthroughs</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Date-stamped visual audit log in owner portal</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Perimeter, gate &amp; boundary checks</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Priority concierge support for vendor work</span></li></ul></div><button class="w-full py-3 px-4 rounded-xl font-bold text-xs uppercase tracking-wider border border-slate-200 bg-white hover:bg-[#FFF1F5] hover:text-[#E2004B] hover:border-[#E2004B]/30 text-[#0F172A] transition-colors" type="button" data-gtm-event="plan_select" data-gtm-label="plan_1000sqyd_to_1acre" onclick="kTrack('plan_select','plan_1000sqyd_to_1acre'); scrollToEnroll(this)">Select Agreement</button></div>
+
+<div class="bg-white rounded-2xl p-7 border-2 border-[#E2004B] shadow-lg flex flex-col justify-between relative md:-translate-y-2 ring-1 ring-[#E2004B]/20" data-purpose="pricing-card"><div class="absolute -top-3.5 left-6 bg-[#E2004B] text-white text-[10px] font-bold uppercase tracking-widest px-3.5 py-1 rounded-full shadow-sm">Large Estate Portfolio</div><div><div class="mb-4 pt-1"><span class="plan-period-text text-[11px] font-bold uppercase tracking-wider text-[#E2004B]">1-Year Agreement</span><h3 class="text-lg font-bold text-[#0F172A] mt-1">Above 1 Acre</h3><p class="text-xs text-[#555D6B] mt-0.5">Farmland, agricultural acreage &amp; big estates</p></div><div class="py-4 my-2 border-y border-slate-100"><div class="flex items-baseline space-x-2 min-w-0 flex-wrap"><span class="card-price text-2xl font-extrabold text-[#0F172A]">&#8377;27,999*</span><span class="card-strike text-sm font-semibold text-[#555D6B] line-through">&#8377;34,999</span></div><span class="card-save inline-block mt-1 text-[11px] font-bold text-[#E2004B]">Annual Privilege: Save &#8377;7,000</span></div><div class="space-y-1.5 mb-2.5"><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Festive Pricing &mdash; 6 Months from &#8377;7,999 | 1 Year from &#8377;12,999 (+GST)</span></div><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Free Property Check &mdash; Photos &amp; short report included (First 25 slots)</span></div><div class="px-2.5 py-1.5 rounded-lg bg-[#FFF1F5] border border-[#E2004B]/20 text-xs leading-snug text-[#0F172A] font-medium flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#E2004B] flex-shrink-0"></span><span>Founding Member Lock &mdash; Rate locked at renewal + Badge (First 10 users)</span></div></div><div class="space-y-2 mt-3 mb-2"><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>Refer &amp; Earn &mdash; &#8377;500 service credit when someone you refer buys a plan. Capped at 3 referrals per customer.</span></div><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>+1 Month Free on Annual Plans &mdash; 13 months for the festive 1-year price (approx. 19-21% below regular monthly rate).</span></div><div class="p-2.5 sm:p-3 rounded-lg bg-[#FFF1F5]/80 border border-[#E2004B]/20 text-xs font-medium text-[#343A46] leading-snug flex items-start space-x-2"><span class="text-[#E2004B] font-bold text-sm leading-none mt-0.5">&bull;</span><span>No GST Applicable &mdash; Valid on more than two properties.</span></div></div><ul class="space-y-3 my-6 text-xs text-[#343A46]"><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Large land parcels exceeding 1 Acre</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Bi-weekly multi-point perimeter audit</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Date-stamped visual audit log in owner portal</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Fencing marker &amp; encroachment vigilance</span></li><li class="flex items-start space-x-2.5"><span class="text-[#E2004B] font-bold">&#10003;</span><span>Senior relationship manager concierge</span></li></ul></div><button class="w-full py-3.5 px-4 rounded-xl font-bold text-xs uppercase tracking-wider bg-[#E2004B] hover:bg-[#BF003F] text-white transition-all shadow-md shadow-[#E2004B]/20" type="button" data-gtm-event="plan_select" data-gtm-label="plan_above_1acre" onclick="kTrack('plan_select','plan_above_1acre'); scrollToEnroll(this)">Enroll Asset</button></div>
+
+</div>
+<p class="text-center text-xs font-medium text-[#555D6B] mt-8">Custom corporate holding packages and institutional portfolios available upon formal inquiry. Standard GST applicable.</p>
+</div>
+</section>
+<!-- 9. COMPREHENSIVE FAQ -->
+<section class="py-14 sm:py-24 bg-white border-b border-slate-200/80" data-purpose="faq-section" id="faq"><div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"><div class="max-w-2xl mb-10 sm:mb-14"><span class="bg-[#E2004B]/10 text-[#E2004B] border border-[#E2004B]/20 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-3">COMMON QUESTIONS</span><h2 class="text-2xl sm:text-3xl font-extrabold text-[#0F172A] tracking-tight leading-tight">Clear Answers to <span class="text-[#E2004B]">Common Questions</span></h2><p class="mt-3 text-xs sm:text-sm text-[#343A46]">Everything you need to know about our visits, reports, and how we care for your property.</p></div><div class="space-y-4" data-purpose="accordion-group"><div class="faq-item border border-slate-200 rounded-lg overflow-hidden bg-white" data-state="closed"><button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#0F172A]" onclick="toggleFaq(this)" type="button"><span class="">What happens during a scheduled visit?</span><span class="faq-icon text-lg font-bold text-[#555D6B]">+</span></button><div class="faq-collapse px-5 pb-5 text-xs sm:text-sm text-[#343A46] leading-relaxed hidden">Our field officer walks around your entire property. They check gates, locks, perimeter walls, boundary stones, vegetation, and surroundings to make sure everything is in order and no trespassing has occurred. Clear photos are captured from every angle.</div></div><div class="faq-item border border-slate-200 rounded-lg overflow-hidden bg-white" data-state="closed"><button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#0F172A]" onclick="toggleFaq(this)" type="button"><span class="">How quickly do I get the photo report?</span><span class="faq-icon text-lg font-bold text-[#555D6B]">+</span></button><div class="faq-collapse px-5 pb-5 text-xs sm:text-sm text-[#343A46] leading-relaxed hidden">Within 2 hours of our visit, all photos and checklist updates are available on your phone and sent directly via WhatsApp and email.</div></div><div class="faq-item border border-slate-200 rounded-lg overflow-hidden bg-white" data-state="closed"><button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#0F172A]" onclick="toggleFaq(this)" type="button"><span class="">What happens if you notice damage or someone encroaching?</span><span class="faq-icon text-lg font-bold text-[#555D6B]">+</span></button><div class="faq-collapse px-5 pb-5 text-xs sm:text-sm text-[#343A46] leading-relaxed hidden">We alert you immediately with close-up photos. We will never start repair work or hire contractors without your explicit written approval and a clear quotation.</div></div><div class="faq-item border border-slate-200 rounded-lg overflow-hidden bg-white" data-state="closed"><button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#0F172A]" onclick="toggleFaq(this)" type="button"><span class="">Is this suitable for NRIs and owners living in another city?</span><span class="faq-icon text-lg font-bold text-[#555D6B]">+</span></button><div class="faq-collapse px-5 pb-5 text-xs sm:text-sm text-[#343A46] leading-relaxed hidden">Yes, absolutely. Most of our clients live overseas (US, UK, UAE, Singapore) or in other Indian metros. Everything is organized digitally via WhatsApp and web, so you don't need to coordinate across time zones.</div></div><div class="faq-item border border-slate-200 rounded-lg overflow-hidden bg-white" data-state="closed"><button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#0F172A]" onclick="toggleFaq(this)" type="button"><span class="">Who visits my property and can I trust them?</span><span class="faq-icon text-lg font-bold text-[#555D6B]">+</span></button><div class="faq-collapse px-5 pb-5 text-xs sm:text-sm text-[#343A46] leading-relaxed hidden">All inspections are conducted directly by full-time, background-verified KONU officers with official company badges and GPS check-ins. We never outsource visits to untrusted third parties.</div></div><div class="faq-item border border-slate-200 rounded-lg overflow-hidden bg-white" data-state="closed"><button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#0F172A]" onclick="toggleFaq(this)" type="button"><span class="">How fast can you start monitoring my property?</span><span class="faq-icon text-lg font-bold text-[#555D6B]">+</span></button><div class="faq-collapse px-5 pb-5 text-xs sm:text-sm text-[#343A46] leading-relaxed hidden">Within 24 hours of enrolling, your relationship manager reaches out to confirm boundary coordinates and set up your initial visit schedule.</div></div></div></div></section>
+</main>
+<!-- 10. LEAD CAPTURE FORM -->
+<!-- 10. ZOHO CRM LEAD FORM -->
+<section class="py-14 sm:py-24 bg-[#0F172A] border-b border-slate-800" id="enroll" data-purpose="lead-form-section">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- HEADER -->
+    <div class="text-center mb-10">
+      <span class="bg-[#E2004B]/20 text-[#E2004B] border border-[#E2004B]/30 px-3 py-1 rounded-full text-xs font-semibold inline-block mb-4 uppercase tracking-wider">Get Started — No Payment Needed</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-tight">Enroll your property.<br><span style="color:#E2004B;">We'll be in touch within 24 hours.</span></h2>
+      <p class="mt-3 text-sm text-slate-400 leading-relaxed max-w-xl mx-auto">Fill in your details and a KONU relationship manager will reach out to confirm your boundary and get you set up.</p>
+    </div>
+
+    <!-- FORM CARD -->
+    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <div style="height:4px;background:linear-gradient(90deg,#FF0055,#E2004B);"></div>
+      <div class="p-6 sm:p-10">
+
+        <!-- ZOHO FORM — all hidden fields and required scripts preserved exactly -->
+        <div id="crmWebToEntityForm" class="zcwf_lblLeft crmWebToEntityForm" style="background:transparent;color:#0F172A;max-width:100%;">
+          <form id="webform1320106000002194001" action="https://crm.zoho.in/crm/WebToLeadForm" name="WebToLeads1320106000002194001" method="POST" onSubmit='javascript:document.charset="UTF-8"; return checkMandatory1320106000002194001()' accept-charset="UTF-8">
+
+            <!-- Do not remove these hidden fields -->
+            <input type="text" style="display:none;" name="xnQsjsdp" value="b68dbe7ba6579e93a5c8690d90b8cdf6e456e368cd6fddc13a73ae351fbbca6b">
+            <input type="hidden" name="zc_gad" id="zc_gad" value="">
+            <input type="text" style="display:none;" name="xmIwtLD" value="db2772d45d45f3cdc0e313b6d690835153ea2185081344ae6717a4418e24eda6b2bc13e2b7e455e94e832f4b9490e717">
+            <input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
+            <input type="text" style="display:none;" name="returnURL" value="https://konu-final-landing-page.vercel.app/thankyou.html">
+
+            <!-- KONU branded form styles -->
+            <style>
+              .konu-form-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px 24px; }
+              .konu-form-full { grid-column:1 / -1; }
+              .konu-form-grid label {
+                display:block; font-size:11px; font-weight:700;
+                color:#555D6B; text-transform:uppercase;
+                letter-spacing:0.07em; margin-bottom:6px;
+              }
+              .konu-form-grid label .req { color:#E2004B; margin-left:2px; }
+              .konu-form-grid input[type=text],
+              .konu-form-grid select,
+              .konu-form-grid textarea {
+                width:100%; border:1.5px solid #e2e8f0; border-radius:10px;
+                padding:10px 14px; font-size:13px; color:#0F172A;
+                background:#FAFAFA; outline:none; font-family:inherit;
+                transition:border-color 0.2s,box-shadow 0.2s;
+                box-sizing:border-box;
+              }
+              .konu-form-grid input[type=text]:focus,
+              .konu-form-grid select:focus,
+              .konu-form-grid textarea:focus {
+                border-color:#E2004B;
+                box-shadow:0 0 0 3px rgba(226,0,75,0.10);
+                background:#fff;
+              }
+              .konu-form-grid select {
+                appearance:none;
+                background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+                background-repeat:no-repeat;
+                background-position:right 14px center;
+                padding-right:36px;
+              }
+              .konu-form-grid select[multiple] {
+                background-image:none; height:120px; padding:8px 10px;
+              }
+              .konu-form-grid textarea { resize:vertical; min-height:80px; }
+              .konu-form-submit { margin-top:28px; text-align:center; }
+              .konu-form-submit input[type=submit] {
+                display:inline-flex; align-items:center; justify-content:center;
+                padding:14px 48px; border-radius:999px; border:none; cursor:pointer;
+                background:linear-gradient(90deg,#FF0055,#E6004C);
+                color:#fff; font-size:13px; font-weight:800;
+                letter-spacing:0.06em; text-transform:uppercase;
+                font-family:inherit;
+                box-shadow:0 4px 20px rgba(226,0,75,0.30);
+                transition:transform 0.18s,box-shadow 0.18s;
+                width:100%; max-width:360px;
+              }
+              .konu-form-submit input[type=submit]:hover {
+                transform:scale(1.04);
+                box-shadow:0 6px 28px rgba(226,0,75,0.45);
+              }
+              .konu-form-submit input[type=reset] {
+                margin-top:10px; display:block; margin-left:auto; margin-right:auto;
+                background:transparent; border:1.5px solid #e2e8f0;
+                border-radius:999px; padding:10px 28px;
+                font-size:12px; font-weight:600; color:#888;
+                cursor:pointer; font-family:inherit;
+                transition:border-color 0.2s;
+              }
+              .konu-form-submit input[type=reset]:hover { border-color:#E2004B; color:#E2004B; }
+              .konu-form-note { font-size:11px; color:#94a3b8; text-align:center; margin-top:12px; }
+              @media(max-width:600px){
+                .konu-form-grid { grid-template-columns:1fr !important; }
+                .konu-form-full { grid-column:1 !important; }
+                .konu-form-submit input[type=submit] { max-width:100%; padding:14px 20px; }
+              }
+            </style>
+
+            <div class="konu-form-grid">
+
+              <!-- First Name -->
+              <div>
+                <label for="First_Name">First Name <span class="req">*</span></label>
+                <input type="text" id="First_Name" name="First Name" maxlength="40" placeholder="e.g. Ravi" aria-required="true">
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label for="Phone">WhatsApp / Mobile <span class="req">*</span></label>
+                <input type="text" id="Phone" name="Phone" maxlength="30" placeholder="+91 98765 43210" aria-required="true">
+              </div>
+
+              <!-- Email -->
+              <div>
+                <label for="Email">Email Address <span class="req">*</span></label>
+                <input type="text" ftype="email" autocomplete="false" id="Email" name="Email" maxlength="100" placeholder="ravi@email.com" aria-required="true">
+              </div>
+
+              <!-- Property Location -->
+              <div>
+                <label for="LEADCF124">KONU Property Location <span class="req">*</span></label>
+                <input type="text" id="LEADCF124" name="LEADCF124" maxlength="255" placeholder="e.g. Shamshabad, Hyderabad" aria-required="true">
+              </div>
+
+              <!-- Property Size -->
+              <div class="konu-form-full">
+                <label for="LEADCF125">Property Size <span class="req">*</span></label>
+                <select id="LEADCF125" name="LEADCF125" aria-required="true" onChange="addAriaSelected1320106000002194001()">
+                  <option value="-None-">Select size</option>
+                  <option value="Under 500 Sq.Yds.">Under 500 Sq. Yds.</option>
+                  <option value="500-1,000 Sq. Yds.">500 – 1,000 Sq. Yds.</option>
+                  <option value="1,000 Sq. Yds. to 1 Acre">1,000 Sq. Yds. to 1 Acre</option>
+                  <option value="Above 1 Acre">Above 1 Acre</option>
+                  <option value="Not Sure">Not Sure</option>
+                </select>
+              </div>
+
+            </div>
+
+            <!-- Do not remove honeypot -->
+            <input type="text" style="display:none;" name="aG9uZXlwb3Q" value="">
+
+            <div class="konu-form-submit">
+              <input type="submit" id="formsubmit" class="formsubmit" value="Request a Callback
+              " aria-label="Submit">
+              <input type="reset" value="Clear Form" aria-label="Reset">
+              <p class="konu-form-note">No payment. No obligation. Your details are kept strictly private.</p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Do not remove — Zoho form scripts -->
+<script>
+  function addAriaSelected1320106000002194001(){
+    var optionElem=event.target;
+    var prev=optionElem.querySelector('[aria-selected=true]');
+    if(prev){prev.removeAttribute('aria-selected');}
+    optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected='true';
+  }
+  function validateEmail1320106000002194001(){
+    var form=document.forms['WebToLeads1320106000002194001'];
+    var emailFld=form.querySelectorAll('[ftype=email]');
+    for(var i=0;i<emailFld.length;i++){
+      var v=emailFld[i].value;
+      if((v.replace(/^\s+|\s+$/g,'')).length!=0){
+        var a=v.indexOf('@'),d=v.lastIndexOf('.');
+        if(a<1||d<a+2||d+2>=v.length){
+          alert('Please enter a valid email address.');
+          emailFld[i].focus();return false;
+        }
+      }
+    }
+    return true;
+  }
+  function checkMandatory1320106000002194001(){
+    var mnd=['Last Name'],lbl=['Last Name'];
+    for(var i=0;i<mnd.length;i++){
+      var f=document.forms['WebToLeads1320106000002194001'][mnd[i]];
+      if(f){
+        if(((f.value).replace(/^\s+|\s+$/g,'')).length==0){
+          alert(lbl[i]+' cannot be empty.');f.focus();return false;
+        }
+      }
+    }
+    if(!validateEmail1320106000002194001()){return false;}
+    document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled',true);
+    return true;
+  }
+  if(typeof _wfa_fstprtcken=='undefined'){_wfa_fstprtcken={};}
+  _wfa_fstprtcken[1320106000002194001]=true;
+  function tooltipShow1320106000002194001(el){
+    var t=el.nextElementSibling,d=t.style.display;
+    if(d=='none'){
+      document.getElementsByClassName('zcwf_tooltip_over').forEach(function(x){x.style.display='none';});
+      t.style.display='block';
+    }else{t.style.display='none';}
+  }
+</script>
+<!-- Do not remove this --- Analytics Tracking code starts -->
+<script id="wf_anal" src="https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=dc3cea5d85b139996920b0e398cb5bad92d0314e2e99e217737e520edaea97d776fb6e8625f6dbf6d2d6e61b84401021gid6bbee52f709f1030eae260294872c306d61a82afd251242201c2ea7d5a26001bgid8545119a4a9dd4092a1d294d8c9e634b3b3abc1a875a2d4d8512cc5469b1ee5dgidf06b109ed74777ed57568cd987d4d65dfd99c2b7946a0a9b6a6f707cd476103d&tw=4942102001a0acc89eb0812c0aca4b657d538d301400cdbeb85e46ac9121b844&version=v2"></script>
+<!-- Do not remove this --- Analytics Tracking code ends. -->
+
+<!-- 11. REFINED EDITORIAL FOOTER -->
+<footer class="bg-white border-t border-slate-200/80 py-12" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-100"><div class="flex items-center space-x-4"><img alt="KONU" class="h-8 w-auto object-contain" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='32' viewBox='0 0 90 32'%3E%3Ctext x='0' y='26' font-family='Arial,sans-serif' font-size='24' font-weight='900' fill='%23E2004B' letter-spacing='-1'%3EKONU%3C/text%3E%3C/svg%3E"><span class="text-xs text-[#555D6B] font-medium pl-4 border-l border-slate-200">Surveyor-grade property vigilance &amp; asset management.</span></div><div class="flex items-center space-x-6 text-xs font-semibold text-[#343A46]"><a class="hover:text-[#E2004B] transition-colors" href="#">Privacy Policy</a><span class="text-slate-400">•</span><a class="hover:text-[#E2004B] transition-colors" href="#">Terms of Agreement</a><span class="text-slate-400">•</span><a class="hover:text-[#E2004B] transition-colors" href="#">Concierge Desk</a></div></div><div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs font-medium text-[#555D6B] gap-2"><p class="">© 2024 KONU Technologies Pvt. Ltd. All rights reserved.</p><p class="">Regional Centers: Hyderabad • Bengaluru • Chennai • Mumbai</p></div></div>
+</footer>
+<!-- Interactive Logic Scripts -->
+<script data-purpose="pricing-and-faq-logic">
+    const pricingData = {
+      '6month': {
+        periodLabel: '6-Month Agreement',
+        tier1: { sale: '₹7,999*',  original: '₹9,999',  save: 'Seasonal Privilege: Save ₹2,000' },
+        tier2: { sale: '₹11,999*', original: '₹14,999', save: 'Seasonal Privilege: Save ₹3,000' },
+        tier3: { sale: '₹15,999*', original: '₹19,999', save: 'Seasonal Privilege: Save ₹4,000' }
+      },
+      '1year': {
+        periodLabel: '1-Year Agreement',
+        tier1: { sale: '₹14,999*', original: '₹19,000', save: 'Annual Privilege: Save ₹4,001' },
+        tier2: { sale: '₹21,999*', original: '₹28,000', save: 'Annual Privilege: Save ₹6,001' },
+        tier3: { sale: '₹28,999*', original: '₹38,000', save: 'Annual Privilege: Save ₹9,001' }
+      }
+    };
+
+    function switchPricing(mode) {
+      const btn6 = document.getElementById('toggleSixMonth');
+      const btn1 = document.getElementById('toggleOneYear');
+      const data = pricingData[mode];
+
+      if (mode === '6month') {
+        btn6.className = 'px-5 py-2 rounded-md text-xs font-bold transition-all bg-[#0F172A] text-white';
+        btn1.className = 'px-5 py-2 rounded-md text-xs font-bold transition-all text-slate-600 hover:text-black';
+      } else {
+        btn1.className = 'px-5 py-2 rounded-md text-xs font-bold transition-all bg-[#0F172A] text-white';
+        btn6.className = 'px-5 py-2 rounded-md text-xs font-bold transition-all text-slate-600 hover:text-black';
+      }
+
+      kTrack('pricing_toggle', 'pricing_' + mode);
+
+      const periodLabels = document.querySelectorAll('.plan-period-text');
+      periodLabels.forEach(label => label.textContent = data.periodLabel);
+
+      const cards = document.querySelectorAll('[data-purpose="pricing-card"]');
+      if (cards.length >= 3) {
+        // Tier 1: Under 1000 Sq. Yds.
+        cards[0].querySelector('.card-price').textContent = data.tier1.sale;
+        cards[0].querySelector('.card-strike').textContent = data.tier1.original;
+        cards[0].querySelector('.card-save').textContent = data.tier1.save;
+
+        // Tier 2: 1000 Sq. Yds. to 1 Acre
+        cards[1].querySelector('.card-price').textContent = data.tier2.sale;
+        cards[1].querySelector('.card-strike').textContent = data.tier2.original;
+        cards[1].querySelector('.card-save').textContent = data.tier2.save;
+
+        // Tier 3: Above 1 Acre
+        cards[2].querySelector('.card-price').textContent = data.tier3.sale;
+        cards[2].querySelector('.card-strike').textContent = data.tier3.original;
+        cards[2].querySelector('.card-save').textContent = data.tier3.save;
+      }
+    }
+
+    // Clean FAQ Accordion Handler
+    function toggleFaq(button) {
+      const parentItem = button.closest('.faq-item');
+      const content = parentItem.querySelector('.faq-collapse');
+      const icon = button.querySelector('.faq-icon');
+      const isAlreadyOpen = parentItem.getAttribute('data-state') === 'open';
+      const question = button.querySelector('span:first-child').textContent.trim();
+
+      document.querySelectorAll('.faq-item').forEach(item => {
+        item.setAttribute('data-state', 'closed');
+        item.querySelector('.faq-collapse').classList.add('hidden');
+        item.querySelector('.faq-toggle').classList.remove('text-[#E2004B]');
+        item.querySelector('.faq-toggle').classList.add('text-[#0F172A]');
+        const itIcon = item.querySelector('.faq-icon');
+        itIcon.textContent = '+';
+        itIcon.classList.remove('text-[#E2004B]');
+        itIcon.classList.add('text-slate-400');
+      });
+
+      if (!isAlreadyOpen) {
+        parentItem.setAttribute('data-state', 'open');
+        content.classList.remove('hidden');
+        button.classList.add('text-[#E2004B]');
+        button.classList.remove('text-[#0F172A]');
+        icon.textContent = '−';
+        icon.classList.add('text-[#E2004B]');
+        icon.classList.remove('text-slate-400');
+        kTrack('faq_open', question.substring(0, 60));
+      }
+    }
+  </script>
+
+<!-- ============================================================
+     KONU CAMPAIGN — GTM DATA LAYER + CRM INTEGRATION
+     ============================================================
+     HOW TO USE:
+     1. Replace GTM-MZKBF4XM (in the <head> and <noscript>) with your real GTM container ID.
+     2. Replace CRM_WEBHOOK_URL below with your webhook endpoint:
+        • HubSpot Forms:  https://api.hsforms.com/submissions/v3/integration/submit/{portalId}/{formGuid}
+        • Zoho CRM:       https://crm.zoho.com/crm/WebToLeadForm  (use their embed form POST)
+        • Make / Zapier:  Paste your scenario/zap webhook URL directly
+        • Custom API:     Your own endpoint that accepts JSON POST
+     3. Update UTM_SOURCE_PARAM if you use UTM params on your campaign URLs.
+     ============================================================ -->
+<script data-purpose="konu-crm-gtm-integration">
+
+  // ── CONFIG ────────────────────────────────────────────────────────────────
+  const KONU_CONFIG = {
+    // Replace with your CRM webhook URL (HubSpot / Zoho / Make / Zapier / custom)
+    CRM_WEBHOOK_URL: 'https://YOUR_CRM_WEBHOOK_ENDPOINT_HERE',
+
+    // Set to true to skip the real CRM POST and log to console instead (dev mode)
+    DEV_MODE: true,
+
+    // Campaign attribution — reads from URL ?utm_* params automatically
+    CAMPAIGN: 'mysecure_q2q3_2024',
+  };
+  // ─────────────────────────────────────────────────────────────────────────
+
+  // Initialize dataLayer
+  window.dataLayer = window.dataLayer || [];
+
+  // Push campaign attribution on page load
+  (function() {
+    const params = new URLSearchParams(window.location.search);
+    window.dataLayer.push({
+      event: 'page_view',
+      page_title: document.title,
+      page_url: window.location.href,
+      campaign: KONU_CONFIG.CAMPAIGN,
+      utm_source:   params.get('utm_source')   || '(direct)',
+      utm_medium:   params.get('utm_medium')   || '(none)',
+      utm_campaign: params.get('utm_campaign') || KONU_CONFIG.CAMPAIGN,
+      utm_content:  params.get('utm_content')  || '',
+      utm_term:     params.get('utm_term')     || '',
+    });
+  })();
+
+  /**
+   * kTrack — unified tracking helper.
+   * Fires a GTM dataLayer event. Extend here for GA4, Meta Pixel, etc.
+   * @param {string} eventName  — e.g. 'cta_click', 'plan_select', 'form_submit'
+   * @param {string} label      — e.g. 'hero_explore_plans', 'plan_above_1acre'
+   * @param {object} [extra]    — optional extra properties
+   */
+  function kTrack(eventName, label, extra) {
+    const payload = {
+      event: eventName,
+      event_label: label,
+      campaign: KONU_CONFIG.CAMPAIGN,
+      timestamp: new Date().toISOString(),
+      ...extra,
+    };
+    window.dataLayer.push(payload);
+    if (KONU_CONFIG.DEV_MODE) {
+      console.log('[KONU GTM]', payload);
+    }
+  }
+
+  /**
+   * scrollToEnroll — scrolls to the form and pre-fills the size dropdown
+   * based on which pricing card was clicked.
+   */
+  function scrollToEnroll(buttonEl) {
+    // Scroll to the Zoho form section
+    const target = document.getElementById('enroll');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+
+  // ── NAV LINK TRACKING ─────────────────────────────────────────────────────
+  document.querySelectorAll('header nav a').forEach(link => {
+    link.addEventListener('click', function() {
+      kTrack('nav_click', this.textContent.trim().toLowerCase());
+    });
+  });
+
+  // ── PRICING TOGGLE TRACKING already handled inside switchPricing() ────────
+
+  // ── SCROLL DEPTH TRACKING ─────────────────────────────────────────────────
+  (function() {
+    const milestones = [25, 50, 75, 90];
+    const fired = new Set();
+    window.addEventListener('scroll', function() {
+      const scrolled = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+      milestones.forEach(m => {
+        if (scrolled >= m && !fired.has(m)) {
+          fired.add(m);
+          kTrack('scroll_depth', m + '_percent', { depth_pct: m });
+        }
+      });
+    }, { passive: true });
+  })();
+
+</script>
+
+
+
+
+
+
+</body></html>
