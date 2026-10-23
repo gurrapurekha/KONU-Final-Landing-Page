@@ -581,6 +581,21 @@ a.hero-cta-btn:hover,
               }
               .konu-form-submit input[type=reset]:hover { border-color:#E2004B; color:#E2004B; }
               .konu-form-note { font-size:11px; color:#94a3b8; text-align:center; margin-top:12px; }
+              /* required field error state */
+              .konu-form-grid input.field-error,
+              .konu-form-grid select.field-error {
+                border-color:#E2004B !important;
+                box-shadow:0 0 0 3px rgba(226,0,75,0.18) !important;
+              }
+              /* shake animation on failed submit */
+              @keyframes formShake {
+                0%,100% { transform:translateX(0); }
+                20%     { transform:translateX(-6px); }
+                40%     { transform:translateX(6px); }
+                60%     { transform:translateX(-4px); }
+                80%     { transform:translateX(4px); }
+              }
+              .form-shake { animation:formShake 0.4s ease; }
               @media(max-width:600px){
                 .konu-form-grid { grid-template-columns:1fr !important; }
                 .konu-form-full { grid-column:1 !important; }
@@ -589,35 +604,38 @@ a.hero-cta-btn:hover,
             </style>
 
             <div class="konu-form-grid">
-
               <!-- First Name -->
               <div>
                 <label for="First_Name">First Name <span class="req">*</span></label>
-                <input type="text" id="First_Name" name="First Name" maxlength="40" placeholder="e.g. Ravi" aria-required="true">
+                <input type="text" id="First_Name" name="First Name" maxlength="40" placeholder="e.g. Ravi" aria-required="true" required oninput="this.style.borderColor='';this.style.boxShadow='';">
               </div>
 
               <!-- Phone -->
               <div>
                 <label for="Phone">WhatsApp / Mobile <span class="req">*</span></label>
-                <input type="text" id="Phone" name="Phone" maxlength="30" placeholder="+91 98765 43210" aria-required="true">
+                <input type="tel" id="Phone" name="Phone" maxlength="10" placeholder="e.g. 9876543210" aria-required="true" required
+                  oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10);this.style.borderColor='';this.style.boxShadow='';"
+                  pattern="[0-9]{10}" title="Enter a valid 10-digit mobile number">
               </div>
 
               <!-- Email -->
               <div>
                 <label for="Email">Email Address <span class="req">*</span></label>
-                <input type="text" ftype="email" autocomplete="false" id="Email" name="Email" maxlength="100" placeholder="ravi@email.com" aria-required="true">
+                <input type="email" ftype="email" autocomplete="email" id="Email" name="Email" maxlength="100" placeholder="ravi@email.com" aria-required="true" required
+                  oninput="this.style.borderColor='';this.style.boxShadow='';"
+                  title="Enter a valid email address (e.g. name@example.com)">
               </div>
 
               <!-- Property Location -->
               <div>
                 <label for="LEADCF124">KONU Property Location <span class="req">*</span></label>
-                <input type="text" id="LEADCF124" name="LEADCF124" maxlength="255" placeholder="e.g. Shamshabad, Hyderabad" aria-required="true">
+                <input type="text" id="LEADCF124" name="LEADCF124" maxlength="255" placeholder="e.g. Shamshabad, Hyderabad" aria-required="true" required oninput="this.style.borderColor='';this.style.boxShadow='';">
               </div>
 
               <!-- Property Size -->
               <div class="konu-form-full">
                 <label for="LEADCF125">Property Size <span class="req">*</span></label>
-                <select id="LEADCF125" name="LEADCF125" aria-required="true" onChange="addAriaSelected1320106000002194001()">
+                <select id="LEADCF125" name="LEADCF125" aria-required="true" required onchange="this.style.borderColor='';this.style.boxShadow=''; addAriaSelected1320106000002194001()">
                   <option value="-None-">Select size</option>
                   <option value="Under 500 Sq.Yds.">Under 500 Sq. Yds.</option>
                   <option value="500-1,000 Sq. Yds.">500 – 1,000 Sq. Yds.</option>
@@ -633,8 +651,7 @@ a.hero-cta-btn:hover,
             <input type="text" style="display:none;" name="aG9uZXlwb3Q" value="">
 
             <div class="konu-form-submit">
-              <input type="submit" id="formsubmit" class="formsubmit" value="Request a Callback
-              " aria-label="Submit">
+              <input type="submit" id="formsubmit" class="formsubmit" value="Request a Callback" aria-label="Submit">
               <input type="reset" value="Clear Form" aria-label="Reset">
               <p class="konu-form-note">No payment. No obligation. Your details are kept strictly private.</p>
             </div>
@@ -659,11 +676,12 @@ a.hero-cta-btn:hover,
     var form=document.forms['WebToLeads1320106000002194001'];
     var emailFld=form.querySelectorAll('[ftype=email]');
     for(var i=0;i<emailFld.length;i++){
-      var v=emailFld[i].value;
-      if((v.replace(/^\s+|\s+$/g,'')).length!=0){
+      var v=emailFld[i].value.replace(/^\s+|\s+$/g,'');
+      if(v.length!=0){
         var a=v.indexOf('@'),d=v.lastIndexOf('.');
         if(a<1||d<a+2||d+2>=v.length){
-          alert('Please enter a valid email address.');
+          emailFld[i].style.borderColor='#E2004B';
+          emailFld[i].style.boxShadow='0 0 0 3px rgba(226,0,75,0.18)';
           emailFld[i].focus();return false;
         }
       }
@@ -671,14 +689,48 @@ a.hero-cta-btn:hover,
     return true;
   }
   function checkMandatory1320106000002194001(){
-    var mnd=['Last Name'],lbl=['Last Name'];
+    var mnd=[
+      {name:'First Name',    label:'First Name'},
+      {name:'Phone',         label:'WhatsApp / Mobile'},
+      {name:'Email',         label:'Email Address'},
+      {name:'LEADCF124',     label:'KONU Property Location'},
+      {name:'LEADCF125',     label:'Property Size'}
+    ];
+    var form=document.forms['WebToLeads1320106000002194001'];
+    var firstError=null;
+    // clear previous error styles
+    mnd.forEach(function(item){
+      var f=form[item.name];
+      if(f) f.style.borderColor='';
+    });
     for(var i=0;i<mnd.length;i++){
-      var f=document.forms['WebToLeads1320106000002194001'][mnd[i]];
+      var f=form[mnd[i].name];
       if(f){
-        if(((f.value).replace(/^\s+|\s+$/g,'')).length==0){
-          alert(lbl[i]+' cannot be empty.');f.focus();return false;
+        var val=(f.value).replace(/^\s+|\s+$/g,'');
+        if(val.length==0 || val=='-None-'){
+          f.style.borderColor='#E2004B';
+          f.style.boxShadow='0 0 0 3px rgba(226,0,75,0.18)';
+          if(!firstError){ firstError=f; }
+        }
+        // extra check: phone must be exactly 10 digits
+        if(mnd[i].name==='Phone' && val.length>0 && !/^[0-9]{10}$/.test(val)){
+          f.style.borderColor='#E2004B';
+          f.style.boxShadow='0 0 0 3px rgba(226,0,75,0.18)';
+          if(!firstError){ firstError=f; }
         }
       }
+    }
+    if(firstError){
+      firstError.focus();
+      // shake the form card
+      var card=document.getElementById('crmWebToEntityForm');
+      if(card){
+        card.classList.remove('form-shake');
+        void card.offsetWidth; // reflow to restart animation
+        card.classList.add('form-shake');
+        card.addEventListener('animationend',function(){ card.classList.remove('form-shake'); },{once:true});
+      }
+      return false;
     }
     if(!validateEmail1320106000002194001()){return false;}
     document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled',true);
